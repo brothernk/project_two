@@ -2,25 +2,27 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
-//PORT
-const PORT = process.env.PORT || 3000;
-
 //Express
 let app = express();
+const PORT = process.env.PORT || 3000;
+
+//Models
+const db = require("./models");
 
 //Static Files
-app.use(express.static(" "));
+app.use(express.static("public"));
 
 //Parsing
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
-
 //Routing
-const routes = require(" ");
-app.use(routes);
+require("./routes/html-routes.js")(app);
+require("./routes/api-routes.js")(app);
 
 //Listening
-app.listen(PORT, function(){
-	console.log("Now listening at: http//:localhost:" + PORT);
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function(){
+    console.log("Now listening at: http//:localhost:" + PORT);
+  });
 });
