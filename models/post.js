@@ -17,6 +17,15 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
+  Post.associate = function(models) {
+    Post.belongsTo(models.Category, {
+      foreignKey: {
+        allowNull: false
+      }
+    });
+  };
+
   return Post;
-  
+
 };
+
