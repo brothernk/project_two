@@ -13,13 +13,18 @@ module.exports = function(app){
     res.redirect('/index');
   });
 
-  // RENDER
+  // Renderr index
   app.get('/index', function (req, res) {
     models.Post.findAll()
     .then(function(data){
       var object = { Post: data };
       res.render("index", object);
     })
+  });
+
+  // Render edit page
+  app.get('/edit', function (req, res) {
+      res.render("edit");
   });
 
 
