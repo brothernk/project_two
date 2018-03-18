@@ -3,17 +3,15 @@
 
 var models = require('../models');
 
-
 //Routing
 module.exports = function(app){
-
 
   // Redirect to index
   app.get('/', function (req, res) {
     res.redirect('/index');
   });
 
-  // RENDER
+  // Render index
   app.get('/index', function (req, res) {
     models.Post.findAll()
     .then(function(data){
@@ -22,6 +20,10 @@ module.exports = function(app){
     })
   });
 
+  // Render edit page
+  app.get('/edit', function (req, res) {
+    res.render("edit");
+  });
 
 };
 
