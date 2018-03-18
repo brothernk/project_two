@@ -12,26 +12,38 @@ $(document).ready(function() {
 
   console.log("made it here");
 
-  $(document).on("click", ".spicy-vote", handleSpicyVote);
+  $(document).on("click", ".spicy-vote", spicyVote); 
+  $(document).on("click", ".icy-vote", icyVote); 
 
+  function spicyVote() {
+    var count = $(this).data('spicy');
+    var thisId = $(this).data('id');
+    var updatePost = {
+      spicy: ++count,
+      id: thisId
+    }
+    updateScore(updatePost);
+  }
 
-  function spicyVote(id) {
-    console.log("This ID: " + id);
+  function icyVote() {
+    var count = $(this).data('icy');
+    var thisId = $(this).data('id');
+    var updatePost = {
+      icy: ++count,
+      id: thisId
+    }
+    updateScore(updatePost);
+  }
+
+  function updateScore(post) {
     $.ajax({
       method: "PUT",
-      url: "/api/posts/" + id
+      url: "/api/posts",
+      data: post
     })
     .then(function() {
-      //getPosts(postCategorySelect.val());
+      location.reload();
     });
   }
-
-  function handleSpicyVote() {
-    currentID = $(this).data('id');
-    spicyVote(currentID);
-
-
-  }
-
 
 });
