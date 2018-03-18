@@ -11,11 +11,11 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     spicy: {
-      type: DataType.Integer,
+      type: DataTypes.INTEGER,
       defaultValue: 0 
     },
     icy: {
-      type: DataType.Integer,
+      type: DataTypes.INTEGER,
       defaultValue: 0 
     },
     category: {
