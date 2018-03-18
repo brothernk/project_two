@@ -4,6 +4,7 @@
 
 //Dependencies
 const db = require("../models");
+const Sequelize = require('sequelize');
 
 //Routing
 module.exports = function(app){
@@ -37,18 +38,19 @@ module.exports = function(app){
 		});
 	});
 
-	//PUT Routing --------- MAY CHANGE "BODY" BASED ON DB
-	app.put("/api/===========", function(request, response){
-		
-		db.Post.update(
-			request.body,
-			{
-				where:{
-				id:request.body.id
-				}
-			})
-			.then(function(dbPost){
-				response.json(dbPost);
-			});
-	});
+
+  // PUT Routing
+  app.put("/api/posts", function(request, response){
+
+    db.Post.update(
+      request.body,
+    {
+      where:{
+        id:request.body.id
+      }
+    })
+    .then(function(dbPost){
+      response.json(dbPost);
+    });
+  });
 };

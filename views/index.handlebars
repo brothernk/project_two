@@ -17,6 +17,14 @@
         {{!-- sent from html-routes.js --}}
         {{#each Post}}
           <p>{{this.entry}}</p>
+
+          <div data-id="{{this.id}}" data-spicy="{{this.spicy}}" class="spicy-vote">
+            <p>Spicy: {{this.spicy}}</p>
+          </div>
+          <div data-id="{{this.id}}" data-icy="{{this.icy}}" class="icy-vote">
+            <p>Icy: {{this.icy}}</p>
+          </div>
+
         {{/each}}
 
         </div>
