@@ -1,23 +1,32 @@
 //Dependencies
-const path = require("path");
+//const path = require("path");
+
+var models = require('../models');
+
 
 //Routing
 module.exports = function(app){
 
-	app.get("/", function(req, res){
 
-    res.render("index");
+  // Redirect to index
+  app.get('/', function (req, res) {
+    res.redirect('/index');
+  });
+
+  // RENDER
+  app.get('/index', function (req, res) {
+    models.Post.findAll()
+    .then(function(data){
+     // console.log(data.length);
+      var object = { Post: data };
+      res.render("index", object);
+    })
+  });
 
 
-		// response.sendFile(path.join(__dirname, "../public/index.html"));
-	});
-	
 };
 
 
 
-// // Redirect to index
-// router.get('/', function (req, res) {
-//   res.redirect('/index');
-// });
+
 

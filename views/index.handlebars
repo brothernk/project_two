@@ -4,7 +4,7 @@
   </div>
   <div class="col-md-8 col-12 card-header pt-4">
     <h1>SpicyBurnz</h1>
-    <h3>blah blah blah</h3>
+    <h3>blah blah blah (index.handlebars)</h3>
   </div>
 </div>
 <div class="jumbtron">
@@ -14,6 +14,11 @@
       <div class="card-body">
         <div class="card-text"> 
           
+        {{!-- sent from html-routes.js --}}
+        {{#each Post}}
+            <p>{{this.entry}}</p>
+        {{/each}}
+
         </div>
       </div>
     </div>
