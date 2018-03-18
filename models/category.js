@@ -3,11 +3,11 @@ module.exports = function(sequelize, DataTypes) {
     name: DataTypes.STRING
   });
 
-  Category.associate = function(models) {
-    Category.hasMany(models.Post, {
-      onDelete: "cascade"
-    });
-  };
+  // Category.associate = function(models) {
+  //   Category.hasMany(models.Post, {
+  //     onDelete: "cascade"
+  //   });
+  // };
 
   return Category;
   
