@@ -17,7 +17,7 @@ module.exports = function(app){
 	});
 
 	//POST Routing --------- MAY CHANGE "BODY" BASED ON DB
-	app.post("/api/========", function(request, response){
+	app.post("/api/posts", function(request, response){
 
 		db.Post.create(request.body).then(function(dbPost){
 			response.json(dbPost);
