@@ -31,6 +31,10 @@ module.exports = function(sequelize, DataTypes) {
   //   });
   // };
 
+  // Post.create( {entry: "Someone has stolen my Microsoft Office and they are going to pay for it, you have my Word."} );
+  // Post.create( {entry: "A computer once beat me at chess, but it was no match for me at kick boxing."} );
+  // Post.create( {entry: "If your parachute doesn't deploy, you have the rest of your life to fix it."} );
+
   return Post;
 
 };

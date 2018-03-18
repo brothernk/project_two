@@ -17,7 +17,7 @@ module.exports = function(app){
   app.get('/index', function (req, res) {
     models.Post.findAll()
     .then(function(data){
-     // console.log(data.length);
+      // console.log(data.length);
       var object = { Post: data };
       res.render("index", object);
     })
