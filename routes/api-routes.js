@@ -37,18 +37,28 @@ module.exports = function(app){
 		});
 	});
 
-	//PUT Routing --------- MAY CHANGE "BODY" BASED ON DB
-	app.put("/api/===========", function(request, response){
-		
-		db.Post.update(
-			request.body,
-			{
-				where:{
-				id:request.body.id
-				}
-			})
-			.then(function(dbPost){
-				response.json(dbPost);
-			});
+	app.put("/api/posts/:id", function(request, response){
+
+    console.log('request:');
+		console.log(request.params.id);
+
+    db.Post.update({
+      spicy: "2"
+    },{
+      where: {
+        id: request.params.id
+    }
+    }).then(function(dbPost){
+        response.json(dbPost);
+      });
+
+		// db.Post.update(
+		// 	request.body,
+		// 	{
+		// 		where:{
+		// 		id:request.body.id
+		// 		}
+		// 	})
+
 	});
 };
