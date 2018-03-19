@@ -21,9 +21,14 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
+    "fs": "0.0.1-security",
     "mysql": "^2.15.0",
     "mysql2": "^1.5.2",
-    "sequelize": "^4.37.0",
+    "npm": "^5.7.1",
+    "path": "^0.12.7",
+    "sequelize": "^4.37.2",
     "sequelize-cli": "^4.0.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }

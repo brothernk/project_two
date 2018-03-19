@@ -2,16 +2,27 @@ const db = require("../models");
 
 module.exports = function(app) {
 
-  //GET Routing
-  app.get("/api/=============", function(request, response) {
-    
-    //Add code for whatever it is we want to get.
+  //GET Routing for categories
+  app.get("/api/categories", function(request, response) {
+    db.Category.findAll({}).then(function(dbCategory) {
+      response.json(dbCategory);
+    });
 
   });
 
-  //POST Routing
-  app.post("/api/=============", function(request, response) {
+  //GET Routing for category id's
+  app.get("/api/categories/:id", function(request, response) {
+      db.Category.findOne({
+        where: {
+          id: req.params.id
+        }
+      }).then(function(dbCategory) {
+        response.json(dbCategory);
+      });
+    });
 
+  //POST Routing
+  app.post("/api/categories", function(request, response) {
     db.Category.create(request.body).then(function(dbCategory) {
       response.json(dbCategory);
     });
@@ -19,14 +30,13 @@ module.exports = function(app) {
   });
 
   //DELETE Routing
-  app.delete("/api/=============", function(request, response) {
+  app.delete("/api/categories", function(request, response){
     db.Category.destroy({
       where: {
-        id: request.params.id
+        id: req.params.id
       }
     }).then(function(dbCategory) {
       response.json(dbCategory);
     });
   });
-
 };
