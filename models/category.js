@@ -3,11 +3,15 @@ module.exports = function(sequelize, DataTypes) {
     name: DataTypes.STRING
   });
 
-  // Category.associate = function(models) {
-  //   Category.hasMany(models.Post, {
-  //     onDelete: "cascade"
-  //   });
-  // };
+  Category.associate = function(models) {
+    Category.hasMany(models.Post, {
+      onDelete: "cascade"
+    });
+  };
+
+  // Category.create( {name: "Dad"} );
+  // Category.create( {name: "Sven and Ole"} );
+  // Category.create( {name: "Work"} );
 
   return Category;
   

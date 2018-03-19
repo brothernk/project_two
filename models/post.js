@@ -18,22 +18,31 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.INTEGER,
       defaultValue: 0 
     },
-    category: {
-      type: DataTypes.STRING,
-    }
   });
 
-  // Post.associate = function(models) {
-  //   Post.belongsTo(models.Category, {
-  //     foreignKey: {
-  //       allowNull: false 
-  //     }
-  //   });
-  // };
+  Post.associate = function(models) {
+    Post.belongsTo(models.Category, {
+      foreignKey: {
+        allowNull: false 
+      }
+    });
+  };
 
-  // Post.create( {entry: "Someone has stolen my Microsoft Office and they are going to pay for it, you have my Word."} );
-  // Post.create( {entry: "A computer once beat me at chess, but it was no match for me at kick boxing."} );
-  // Post.create( {entry: "If your parachute doesn't deploy, you have the rest of your life to fix it."} );
+//had CategoryId and foreignKey after the entry but neither posts category foreign key to the post
+//it looks like that has to be done in the api routes
+
+  // Post.create( {
+  //   entry: "Someone has stolen my Microsoft Office and they are going to pay for it, you have my Word."
+  // } );
+
+  // Post.create( {
+  //   entry: "A computer once beat me at chess, but it was no match for me at kick boxing."
+  // } );
+
+  // Post.create( {
+  //   entry: "If your parachute doesn't deploy, you have the rest of your life to fix it."
+  // } );
+
 
   return Post;
 
