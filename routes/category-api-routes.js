@@ -9,24 +9,23 @@ module.exports = function(app) {
     });
 
   });
-//get the category ids
-  app.get("/api/categories/:id", function(req, res) {
+
+  //GET Routing for category id's
+  app.get("/api/categories/:id", function(request, response) {
       db.Category.findOne({
         where: {
           id: req.params.id
         }
       }).then(function(dbCategory) {
-        res.json(dbCategory);
+        response.json(dbCategory);
       });
     });
 
   //POST Routing
   app.post("/api/categories", function(req, res) {
-
     db.Category.create(req.body).then(function(dbCategory) {
       res.json(dbCategory);
     });
-    
   });
 
   //DELETE Routing
@@ -39,5 +38,4 @@ module.exports = function(app) {
       res.json(dbCategory);
     });
   });
-
 };
