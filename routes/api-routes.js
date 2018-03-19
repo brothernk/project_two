@@ -39,7 +39,7 @@ module.exports = function(app){
 			response.json(dbPost);
 		});
 	});
-
+  
 	//DELETE Routing
 	app.delete("/api/post", function(request, response){
 		db.Post.destroy({
@@ -51,9 +51,9 @@ module.exports = function(app){
 		});
 	});
 
-  	// PUT Routing
-  	app.put("/api/posts", function(request, response){
-	    db.Post.update(
+  // PUT Routing
+  app.put("/api/posts", function(request, response){
+	   db.Post.update(
 	      request.body,
 	    {
 	      where:{

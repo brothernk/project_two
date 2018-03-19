@@ -3,9 +3,9 @@ const db = require("../models");
 module.exports = function(app) {
 
   //GET Routing for categories
-  app.get("/api/categories", function(request, response) {
+  app.get("/api/categories", function(req, res) {
     db.Category.findAll({}).then(function(dbCategory) {
-      response.json(dbCategory);
+      res.json(dbCategory);
     });
 
   });
@@ -22,21 +22,20 @@ module.exports = function(app) {
     });
 
   //POST Routing
-  app.post("/api/categories", function(request, response) {
-    db.Category.create(request.body).then(function(dbCategory) {
-      response.json(dbCategory);
+  app.post("/api/categories", function(req, res) {
+    db.Category.create(req.body).then(function(dbCategory) {
+      res.json(dbCategory);
     });
-    
   });
 
   //DELETE Routing
-  app.delete("/api/categories", function(request, response){
+  app.delete("/api/categories", function(req, res) {
     db.Category.destroy({
       where: {
         id: req.params.id
       }
     }).then(function(dbCategory) {
-      response.json(dbCategory);
+      res.json(dbCategory);
     });
   });
 };
