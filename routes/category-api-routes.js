@@ -2,30 +2,41 @@ const db = require("../models");
 
 module.exports = function(app) {
 
-  //GET Routing
-  app.get("/api/=============", function(request, response) {
-    
-    //Add code for whatever it is we want to get.
+  //GET Routing for categories
+  app.get("/api/categories", function(req, res) {
+    db.Category.findAll({}).then(function(dbCategory) {
+      res.json(dbCategory);
+    });
 
   });
+//get the category ids
+  app.get("/api/categories/:id", function(req, res) {
+      db.Category.findOne({
+        where: {
+          id: req.params.id
+        }
+      }).then(function(dbCategory) {
+        res.json(dbCategory);
+      });
+    });
 
   //POST Routing
-  app.post("/api/=============", function(request, response) {
+  app.post("/api/categories", function(req, res) {
 
-    db.Category.create(request.body).then(function(dbCategory) {
-      response.json(dbCategory);
+    db.Category.create(req.body).then(function(dbCategory) {
+      res.json(dbCategory);
     });
     
   });
 
   //DELETE Routing
-  app.delete("/api/=============", function(request, response) {
+  app.delete("/api/categories", function(req, res) {
     db.Category.destroy({
       where: {
-        id: request.params.id
+        id: req.params.id
       }
     }).then(function(dbCategory) {
-      response.json(dbCategory);
+      res.json(dbCategory);
     });
   });
 

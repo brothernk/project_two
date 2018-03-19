@@ -9,11 +9,26 @@ const Sequelize = require('sequelize');
 //Routing
 module.exports = function(app){
 
-	//GET Routing
-	app.get("/api/=========", function(request, response){
+	//do we want to just post the jokes that have less than x total votes
+	//so that they are the ones that have to be voted on first?
 
-		//Add code for whatever it is we want to get.
+	//GET Routing for all the posts
+	app.get("/api/posts", function(request, response){
+		db.Post.findOne({}).then(function(dbPost) {
+      		res.json(dbPost);
+	    });
+	});
 
+// Get rotue for retrieving a single post
+	app.get("/api/posts/:id", function(request, response){
+		db.Post.findOne({
+	      where: {
+	        id: request.params.id
+	      }
+	    }).then(function(dbPost) {
+	      console.log(dbPost);
+	      response.json(dbPost);
+	    });
 	});
 
 	//POST Routing --------- MAY CHANGE "BODY" BASED ON DB
@@ -24,9 +39,20 @@ module.exports = function(app){
 		});
 
 	});
-
+// GET route for getting all of the posts
+  app.get("/api/posts", function(req, res) {
+    var query = {};
+    if (req.query.category_id) {
+      query.CategoryId = req.query.category_id;
+    }
+    db.Post.findAll({
+      where: query
+    }).then(function(dbPost) {
+      res.json(dbPost);
+    });
+  });
 	//DELETE Routing
-	app.delete("/api/========", function(request, response){
+	app.delete("/api/post", function(request, response){
 
 		db.Post.destroy({
 			where: {
