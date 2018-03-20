@@ -1,27 +1,33 @@
-<div class="jumbtron">
+<div class="container">
   <div class="row">
-    <div class="card border-0 rounded-0 mb-3 mx-4" id="options">
-      <h2 class="card-header text-center">Ready to vote on Burnz</h2>
-      <div class="card-body">
-        <div class="card-text"> 
-
-          <a class="button" href="/edit">Add Joke</a>
-          {{!-- sent from html-routes.js --}}
-          {{#each Post}}
-            <p>{{this.entry}}</p>
-
-            <div data-id="{{this.id}}" data-spicy="{{this.spicy}}" class="spicy-vote">
-              <p>Spicy: {{this.spicy}}</p>
-            </div>
-            <div data-id="{{this.id}}" data-icy="{{this.icy}}" class="icy-vote">
-              <p>Icy: {{this.icy}}</p>
-            </div>
-
-          {{/each}}
-
-        </div>
-      </div>
+    <button class="btn btn-dark py-2 col-12 mb-3" href="/edit">Add Joke</button>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2>Ready to vote on Burnz</h2>
     </div>
   </div>
+  
+  {{#each Post}}
+
+  <div class="row">
+    <div class="col-2 spicy-vote" data-id="{{this.id}}" data-spicy="{{this.spicy}}">
+      <button class="btn btn-danger"><i class="fas fa-fire"></i></i> Spicy: {{this.spicy}}</button>
+    </div>
+    <div class="col-8 mb-3">
+      {{!-- sent from html-routes.js --}}
+      
+      <p>{{this.entry}}</p>
+      
+    </div>
+    <div class="col-2 icy-vote" data-id="{{this.id}}" data-icy="{{this.icy}}">
+      <button class="btn btn-info"><i class="far fa-snowflake"></i> Icy: {{this.icy}}</button>
+    </div>
+  </div>
+
+  {{/each}}
+
 </div>
+
+
 
