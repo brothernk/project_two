@@ -6,15 +6,17 @@
 	.st0{fill:none;stroke:#000000;stroke-width:3;}
 	.st1{fill:#FFFFFF;}
 	.st2{font-family:'BalboaPlus-Inline';}
-	.st3{font-size:154.5214px;}
-	.st4{letter-spacing:-4;}
+	.st3{font-size:154.5139px;}
+	.st4{letter-spacing:-3;}
 	.st5{font-family:'BalboaPlus-Fill';}
 </style>
 <g>
 	<rect x="48.7" y="35.2" class="st0" width="577.3" height="234.9"/>
-	<rect x="-81.9" y="67.4" class="st1" width="842.2" height="174.6"/>
-	<rect x="79.3" y="-88.2" class="st1" width="516.3" height="459.7"/>
-	<text transform="matrix(0.999 -4.361912e-02 4.361912e-02 0.999 16.6326 223.5019)"><tspan x="0" y="0" class="st2 st3">SPI</tspan><tspan x="175.4" y="0" class="st2 st3 st4">C</tspan><tspan x="236.6" y="0" class="st2 st3">Y</tspan></text>
-	<text transform="matrix(0.999 -4.361912e-02 4.361912e-02 0.999 322.756 210.1364)" class="st5 st3">BURNZ</text>
+	<rect x="-0.5" y="67.4" class="st1" width="679.6" height="174.6"/>
+	<rect x="79.3" y="0.8" class="st1" width="516.3" height="302.1"/>
+	<text transform="matrix(0.999 -4.362122e-02 4.362122e-02 0.999 16.6324 223.5014)" class="st2 st3">SPI</text>
+	<text transform="matrix(0.999 -4.362122e-02 4.362122e-02 0.999 191.857 215.8506)" class="st2 st3 st4">C</text>
+	<text transform="matrix(0.999 -4.362122e-02 4.362122e-02 0.999 252.996 213.1811)" class="st2 st3">Y</text>
+	<text transform="matrix(0.999 -4.362122e-02 4.362122e-02 0.999 322.7558 210.1362)" class="st5 st3">BURNZ</text>
 </g>
 </svg>
