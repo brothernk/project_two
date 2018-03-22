@@ -2,29 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-    <link rel="stylesheet" href="/assets/css/reset.css" type="text/css" />
-    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-		<title>Project 2 Title!</title>
+    {{!-- CSS --}}
+    <link rel="stylesheet" href="/assets/css/reset.css" type="text/css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
+    {{!-- JavaScript --}}
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="/assets/js/script.js"></script>
     <script src="/assets/js/post.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    {{!-- Google Fonts --}}
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400" rel="stylesheet">
+    <title>SpicyBurnz</title>
 </head>
 <body>
 
-  <header class="row text-white bg-dark mb-4">
-    <div class="col-md-4 col-12 card-header">
-    {{!--   <img src="/assets/images/" class="img-fluid" height="180px"> --}}
+    <div class="col-12" id="header">
+        <div class="logo"></div>
     </div>
-    <div class="col-md-8 col-12 card-header pt-4">
-      <h1>SpicyBurnz</h1>
-      <h3>blah blah blah (index.handlebars)</h3>
-    </div>
-  </header>
 
 	{{{ body }}}
 
-<footer class="text-center py-3 mt-2 mb-0">blah blah blah (main.handlebars)</footer>
+{{!-- <footer class="text-center py-3 mt-2 mb-0">© 2018 SpicyBurnz. All rights reserved</footer> --}}
 </body>
 </html>

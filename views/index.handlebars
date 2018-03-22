@@ -1,27 +1,35 @@
-<div class="container">
+<div class="container" id="body-content">
   <div class="row">
-    <button class="btn btn-dark py-2 col-12 mb-3" href="/edit">Add Joke</button>
-  </div>
-  <div class="row">
-    <div class="col-12 text-center">
-      <h2>Ready to vote on Burnz</h2>
+    <div class="col-5" id="flame">
+      <h3>Jokes</h3>
+    </div>
+    <div class="col-7">
+      <h2 class="instructions">
+        If you just want to judge randos on the internet go ahead - rate some sick burnz. Click the flame to see the jokes and then you literally just pick spicy or icy. That's it. Go forth and judge. Or, if you actually think you're funny go ahead an prove it...
+      </h2>
+      <div class="nav-bar">
+        <a href="/edit" class="links" id="add-button">Add Your Own</a>
+      </div>
+    </div>
     </div>
   </div>
+
   
   {{#each Post}}
 
-  <div class="row">
-    <div class="col-2 spicy-vote" data-id="{{this.id}}" data-spicy="{{this.spicy}}">
-      <button class="btn btn-danger"><i class="fas fa-fire"></i></i> Spicy: {{this.spicy}}</button>
-    </div>
-    <div class="col-8 mb-3">
-      {{!-- sent from html-routes.js --}}
-      
-      <p>{{this.entry}}</p>
-      
-    </div>
-    <div class="col-2 icy-vote" data-id="{{this.id}}" data-icy="{{this.icy}}">
-      <button class="btn btn-info"><i class="far fa-snowflake"></i> Icy: {{this.icy}}</button>
+  <div class="container" id="joke-list">
+    <div class="row">
+      <div class="col-2 spicy-vote" data-id="{{this.id}}" data-spicy="{{this.spicy}}">
+        <button class="btn btn-danger" id="spicy-button"><i class="fas fa-fire"></i></i> Spicy: {{this.spicy}}</button>
+      </div>
+      <div class="col-8 mb-3">
+        
+        <p>{{this.entry}}</p>
+        
+      </div>
+      <div class="col-2 icy-vote" data-id="{{this.id}}" data-icy="{{this.icy}}">
+        <button class="btn btn-info"><i class="far fa-snowflake"></i> Icy: {{this.icy}}</button>
+      </div>
     </div>
   </div>
 
