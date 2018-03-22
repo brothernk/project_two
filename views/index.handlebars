@@ -14,16 +14,15 @@
     </div>
   </div>
 
-  
   {{#each Post}}
 
   <div class="container" id="joke-list">
-    <div class="row">
+    <div class="row" data-guessed="false">
       <div class="col-2 spicy-vote" data-id="{{this.id}}" data-spicy="{{this.spicy}}">
         <button class="btn btn-danger" id="spicy-button"><i class="fas fa-fire"></i></i> Spicy: {{this.spicy}}</button>
       </div>
       <div class="col-8 mb-3">
-        
+        {{!-- sent from html-routes.js --}}
         <p>{{this.entry}}</p>
         
       </div>
@@ -36,6 +35,3 @@
   {{/each}}
 
 </div>
-
-
-

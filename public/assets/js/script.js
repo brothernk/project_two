@@ -25,14 +25,27 @@ $(document).ready(function() {
   $(document).on("click", ".icy-vote", icyVote); 
 
   function spicyVote() {
-    var count = $(this).data('spicy');
-    var thisId = $(this).data('id');
-    var updatePost = {
-      spicy: ++count,
-      id: thisId
+
+    // revisit once page no longer reloads
+    if ($(this).parent().attr("data-guessed") === "true") {
+
+      return;
+
+    } else {
+        
+      var count = $(this).data('spicy');
+      var thisId = $(this).data('id');
+      var updatePost = {
+        spicy: ++count,
+        id: thisId
+      }
+      updateScore(updatePost);        
     }
-    updateScore(updatePost);
+
+  $(this).parent().attr("data-guessed", "true");
+
   }
+
 
   function icyVote() {
     var count = $(this).data('icy');
