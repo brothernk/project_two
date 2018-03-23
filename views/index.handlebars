@@ -1,36 +1,44 @@
-<div class="container" id="body-content">
+{{!-- Logo --}}
+<div class="col-12">
+  <div id="logo-main"></div>
+</div>
+
+{{!-- Content --}}
+<div class="container">
   <div class="row">
     <div class="col-5" id="flame">
       <h3>Jokes</h3>
     </div>
     <div class="col-7">
-      <h2 class="instructions">
+      <h5 id="instructions">
         If you just want to judge randos on the internet go ahead - rate some sick burnz. Click the flame to see the jokes and then you literally just pick spicy or icy. That's it. Go forth and judge. Or, if you actually think you're funny go ahead an prove it...
-      </h2>
+      </h5>
       <div class="nav-bar">
         <a href="/edit" class="links" id="add-button">Add Your Own</a>
       </div>
     </div>
-    </div>
   </div>
+</div>
+
+<div class="container" id="joke-list">
 
   {{#each Post}}
 
-  <div class="container" id="joke-list">
     <div class="row" data-guessed="false">
+
       <div class="col-2 spicy-vote" data-id="{{this.id}}" data-spicy="{{this.spicy}}">
         <button class="btn btn-danger" id="spicy-button"><i class="fas fa-fire"></i></i> Spicy: {{this.spicy}}</button>
       </div>
+
       <div class="col-8 mb-3">
-        {{!-- sent from html-routes.js --}}
-        <p>{{this.entry}}</p>
-        
+        <p>{{this.entry}}</p> 
       </div>
+
       <div class="col-2 icy-vote" data-id="{{this.id}}" data-icy="{{this.icy}}">
         <button class="btn btn-info"><i class="far fa-snowflake"></i> Icy: {{this.icy}}</button>
       </div>
+
     </div>
-  </div>
 
   {{/each}}
 

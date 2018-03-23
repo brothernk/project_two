@@ -1,24 +1,37 @@
+{{!-- Logo --}}
+<div class="col-12">
+  <div id="logo-secondary"></div>
+</div>
+
+{{!-- Content --}}
 <div class="container">
-   <div class="nav-bar">
-      <a href="/index" class="links">Judge Other People</a>
-    </div>
-  
-    <div class="col-md-6 col-md-offset-3">
+  <div class="row">
+
+    <div class ="col-6">
       <form id="joke-form">
         <div class="form-group">
           <label for="body">Joke:</label>
-          <textarea class="form-control" rows="2" id="body"></textarea>
+          <textarea class="form-control" rows="1" id="body"></textarea>
             <div class="form-group">
               <label for="category">Select Category:</label>
-              <select class="form-control" id="category">
-                <option value="Roast">Roast</option>
-                <option value="Dad Joke">Dad Joke</option>
-                <option value="One LIner">One liner</option>
-              </select>
+                <select class="form-control" id="category">
+                  <option value="Roast">Roast</option>
+                  <option value="Dad Joke">Dad Joke</option>
+                  <option value="One LIner">One liner</option>
+                </select>
             </div>
-            <br />
+            <br/>
             <button type="submit" class="btn btn-success submit">Submit</button>
         </div>
       </form>
     </div>
+
+    <div class ="col-6">
+      <h5>Realized you aren't actually funny? That's chill, go back to anonymously judging other people.</h5>
+      <div class="nav-bar">
+        <a href="/index" class="links">Judge Jokes</a>
+      </div>
+    </div>
+
+  </div>
 </div>
