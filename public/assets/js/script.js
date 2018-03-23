@@ -2,11 +2,11 @@ $(document).ready(function() {
 
   //Click Events
   $("#flame").click(function(){
-      $("#joke-list").show();
-      $("#instructions").hide();
-      $("#flame").hide();
-      $(".links").hide();
-      $("#logo-main").animate({height:"100px"});
+    $("#joke-list").show();
+    $("#instructions").hide();
+    $("#flame").hide();
+    $(".links").hide();
+    $("#logo-main").animate({height:"100px"});
   });
 
   //Scroll Events
@@ -28,15 +28,12 @@ $(document).ready(function() {
   $(document).on("click", ".spicy-vote", spicyVote); 
   $(document).on("click", ".icy-vote", icyVote); 
 
+
   function spicyVote() {
 
-    // revisit once page no longer reloads
     if ($(this).parent().attr("data-guessed") === "true") {
-
       return;
-
     } else {
-        
       var count = $(this).data('spicy');
       var thisId = $(this).data('id');
       var updatePost = {
@@ -45,30 +42,44 @@ $(document).ready(function() {
       }
       updateScore(updatePost);        
     }
-
-  $(this).parent().attr("data-guessed", "true");
-
+    $(this).parent().attr("data-guessed", "true");
   }
 
-
   function icyVote() {
-    var count = $(this).data('icy');
-    var thisId = $(this).data('id');
-    var updatePost = {
-      icy: ++count,
-      id: thisId
+    if ($(this).parent().attr("data-guessed") === "true") {
+      return;
+    } else {
+
+      var count = $(this).data('icy');
+      var thisId = $(this).data('id');
+      var updatePost = {
+        icy: ++count,
+        id: thisId
+      }
+      updateScore(updatePost);
     }
-    updateScore(updatePost);
+    $(this).parent().attr("data-guessed", "true");
   }
 
   function updateScore(post) {
-    $.ajax({
-      method: "PUT",
-      url: "/api/posts",
-      data: post
-    })
-    .then(function() {
-      location.reload();
+
+   // update database with new score
+   $.ajax({
+    method: "PUT",
+    url: "/api/posts",
+    data: post
+  })
+   .then(function() {
+
+      // update page with new vote count
+      $.get("/api/posts/" + post.id, function(data) {
+        if (data) {
+          $('[data-row-id="'+post.id+'"]').find('.spicy-vote').find('.value').html(data.spicy);
+          $('[data-row-id="'+post.id+'"]').find('.icy-vote').find('.value').html(data.icy);
+        }
+      });
+
     });
-  }
+ }
+
 });

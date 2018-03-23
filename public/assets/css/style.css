@@ -84,10 +84,16 @@ footer{
 }
 
 #joke-form{
-	margin-top:50px;
+  margin-top:50px;
 	padding: 20px;
 	background-color: lightpink;
 	box-shadow: -10px 10px 10px darkgrey;
+}
+
+/* spicy and icy number */
+.value {
+  display: inline;
+  margin:50px;
 }
 
 #not-funny{

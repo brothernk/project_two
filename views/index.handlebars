@@ -24,10 +24,10 @@
 
   {{#each Post}}
 
-    <div class="row" data-guessed="false" id="individual-joke">
+    <div class="row" data-row-id="{{this.id}}" data-guessed="false" id="individual-joke">
 
       <div class="col-2 spicy-vote" data-id="{{this.id}}" data-spicy="{{this.spicy}}">
-        <button class="btn btn-danger" id="spicy-button"><i class="fas fa-fire"></i></i> Spicy: {{this.spicy}}</button>
+        <button class="btn btn-danger" id="spicy-button"><i class="fas fa-fire"></i></i> Spicy: <div class="value">{{this.spicy}}</div></button>
       </div>
 
       <div class="col-8 mb-3">
@@ -35,7 +35,7 @@
       </div>
 
       <div class="col-2 icy-vote" data-id="{{this.id}}" data-icy="{{this.icy}}">
-        <button class="btn btn-info"><i class="far fa-snowflake"></i> Icy: {{this.icy}}</button>
+        <button class="btn btn-info"><i class="far fa-snowflake"></i> Icy: <div class="value">{{this.icy}}</div></button>
       </div>
 
     </div>

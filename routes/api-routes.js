@@ -28,7 +28,7 @@ module.exports = function(app){
 	        id: request.params.id
 	      }
 	    }).then(function(dbPost) {
-	      console.log(dbPost);
+	    //  console.log(dbPost);
 	      response.json(dbPost);
 	    });
 	});
