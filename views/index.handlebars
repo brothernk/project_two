@@ -24,7 +24,7 @@
 
   {{#each Post}}
 
-    <div class="row" data-row-id="{{this.id}}" data-guessed="false">
+    <div class="row" data-row-id="{{this.id}}" data-guessed="false" id="individual-joke">
 
       <div class="col-2 spicy-vote" data-id="{{this.id}}" data-spicy="{{this.spicy}}">
         <button class="btn btn-danger" id="spicy-button"><i class="fas fa-fire"></i></i> Spicy: <div class="value">{{this.spicy}}</div></button>

@@ -14,6 +14,7 @@ body{
 	height:300px;
 	background-repeat: no-repeat;
 	background-position: center;
+	margin-top:20px;
 }
 
 #logo-secondary{
@@ -61,6 +62,15 @@ body{
 	margin: auto;
 	text-align: center;
 	display: none;
+	font-size: 18px;
+}
+
+#individual-joke{
+	margin: auto;
+	border:1px solid black;
+	padding-top:25px;
+	width: 1000px;
+	margin-bottom:20px;
 }
 
 footer{
@@ -68,11 +78,31 @@ footer{
 }
 
 /*Joke Form ===============================================*/
+#add-joke-page{
+	margin: auto;
+	width: 900px;
+}
+
 #joke-form{
-	margin:50px;
+  margin-top:50px;
+	padding: 20px;
+	background-color: lightpink;
+	box-shadow: -10px 10px 10px darkgrey;
 }
 
 /* spicy and icy number */
 .value {
   display: inline;
+  margin:50px;
+}
+
+#not-funny{
+	margin-top:50px;
+}
+
+#submit-button{
+	border-radius: 0px;
+	text-transform: uppercase;
+	background-color: black;
+	border:none;
 }
