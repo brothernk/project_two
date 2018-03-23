@@ -71,3 +71,8 @@ footer{
 #joke-form{
 	margin:50px;
 }
+
+/* spicy and icy number */
+.value {
+  display: inline;
+}
