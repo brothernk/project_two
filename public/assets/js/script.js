@@ -2,11 +2,11 @@ $(document).ready(function() {
 
   //Click Events
   $("#flame").click(function(){
-        $("#joke-list").show();
-        $(".instructions").hide();
-        $("#flame").hide();
-        $(".links").hide();
-        $(".logo").animate({height:"100px"});
+      $("#joke-list").show();
+      $("#instructions").hide();
+      $("#flame").hide();
+      $(".links").hide();
+      $("#logo-main").animate({height:"100px"});
   });
 
   //Create container for all of the items
