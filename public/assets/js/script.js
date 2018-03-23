@@ -9,6 +9,10 @@ $(document).ready(function() {
       $("#logo-main").animate({height:"100px"});
   });
 
+  //Scroll Events
+  // window.sr = ScrollReveal();
+  //   sr.reveal("#joke-list");
+
   //Create container for all of the items
   let itemContainer = $(" ");
 
