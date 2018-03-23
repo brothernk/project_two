@@ -1,6 +1,13 @@
 /*General ==================================================*/
+html, body{
+	margin: auto;
+	height:100%;
+	width: 100%;
+}
+
 body{
 	font-family: "Barlow Condensed", sans-serif;
+	border:20px solid lightgrey;
 }
 
 .container{
@@ -22,13 +29,20 @@ body{
 }
 
 #flame {
-	background-color: lightgrey;
+	background-color: red;
+	height:300px;
+	bottom: 0;
+	position: absolute;
+}
+
+#instruction-div{
+	position: absolute;
+	left: 500px;
 }
 
 /*Navigation ===============================================*/
 .nav-bar{
 	margin-top:30px;
-	text-align: left;
 }
 
 .links, .links:hover{
@@ -53,13 +67,14 @@ body{
 
 #instructions {
 	padding: 5px;
-	margin-top: 80px;
+	margin-top: 60px;
 	text-align: left;
 	width:650px;
 }
 
 #joke-list{
 	margin: auto;
+	margin-top:30px;
 	text-align: center;
 	display: none;
 	font-size: 18px;
@@ -77,7 +92,13 @@ footer{
 	font-size: 12px;
 }
 
-/*Joke Form ===============================================*/
+/* Spicy and Icy Number ===================================*/
+.value {
+  display: inline;
+  margin:30px;
+}
+
+/*Joke Page ===============================================*/
 #add-joke-page{
 	margin: auto;
 	width: 900px;
@@ -90,19 +111,15 @@ footer{
 	box-shadow: -10px 10px 10px darkgrey;
 }
 
-/* spicy and icy number */
-.value {
-  display: inline;
-  margin:50px;
-}
-
-#not-funny{
-	margin-top:50px;
-}
-
 #submit-button{
 	border-radius: 0px;
 	text-transform: uppercase;
 	background-color: black;
 	border:none;
+}
+
+#not-funny{
+	margin-top:30px;
+	text-align: center;
+	margin: auto;
 }
