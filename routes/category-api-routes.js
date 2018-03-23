@@ -2,10 +2,11 @@ const db = require("../models");
 
 module.exports = function(app) {
 
-  //GET Routing for categories
+  //GET Routing for all categories and return them to browser with res.json
   app.get("/api/categories", function(req, res) {
     db.Category.findAll({}).then(function(dbCategory) {
       res.json(dbCategory);
+      console.log(dbCategory);
     });
 
   });
@@ -21,14 +22,14 @@ module.exports = function(app) {
       });
     });
 
-  //POST Routing
+  //POST Routing - not sure if we will be using this feature
   app.post("/api/categories", function(req, res) {
     db.Category.create(req.body).then(function(dbCategory) {
       res.json(dbCategory);
     });
   });
 
-  //DELETE Routing
+  //DELETE Routing - not sure we will be using this feature
   app.delete("/api/categories", function(req, res) {
     db.Category.destroy({
       where: {

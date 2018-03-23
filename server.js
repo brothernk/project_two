@@ -24,6 +24,7 @@ app.use(bodyParser.json());
 //Routing
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
+require("./routes/category-api-routes.js")(app);
 
 //Listening
 db.sequelize.sync().then(function() {

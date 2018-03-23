@@ -1,3 +1,4 @@
+//this is for the index page where jokes are voted for
 $(document).ready(function() {
 
   //Click Events
@@ -22,6 +23,7 @@ $(document).ready(function() {
   //Code for getting a specific category will go here
   let url = window.location.search;
   let categoryId;
+
 
   console.log("made it here");
 
