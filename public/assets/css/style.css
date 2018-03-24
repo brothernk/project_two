@@ -87,6 +87,15 @@ body{
 	margin-bottom:20px;
 }
 
+#individual-joke[data-guessed="false"] {
+  background-color: #cbcbcb;
+}
+
+#individual-joke[data-guessed="true"] {
+  background-color: #ffffff; 
+}
+
+
 footer{
 	font-size: 12px;
 }
@@ -94,7 +103,7 @@ footer{
 /* Spicy and Icy Number ===================================*/
 .value {
   display: inline;
-  margin:30px;
+  margin: 10px;
 }
 
 /*Joke Page ===============================================*/
