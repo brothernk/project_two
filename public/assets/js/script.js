@@ -11,28 +11,24 @@ $(document).ready(function() {
     // $("#flame").hide();
     $(".links").hide();
     $("#logo-main").animate({height:"90px"});
+    $("#logo-main").animate({height:"100px"});
   });
 
-  // Modal Buttons
-    $("#judge-button").click(function(){
+// Modal Buttons
+  $("#judge-button").click(function(){
+    $("#index-page").hide();
+    $("#joke-list").show();
+    $("#logo-main").animate({height:"100px"});
+    // $('#exampleModalCenter').modal('hide');
+  });
 
-      $("#index-page").hide();
-      $("#joke-list").show();
-      $("#logo-main").animate({height:"100px"});
 
-      // $('#exampleModalCenter').modal('hide');
-    });
-
-    
-    $("#submit-button").click(function(){
-
-      $("#index-page").hide();
-      $("#joke-list").show();
-      $("#logo-main").animate({height:"100px"});
-
-      // $('#exampleModalCenter').modal('hide');
-    });
-
+  $("#judge-button").click(function(){
+    $("#index-page").hide();
+    $("#joke-list").show();
+    $("#logo-main").animate({height:"100px"});
+    // $('#exampleModalCenter').modal('hide');
+  });
 
 
 
