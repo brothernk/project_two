@@ -11,8 +11,8 @@ $(document).ready(function() {
   // A function to get the categories and then render our list of categories
   //it comes to this function but cannot get the categories
   function getCategories() {
-    $.get("/api/categories", renderCategoryList);
-    console.log("I got the categories");
+    // $.get("/api/categories", renderCategoryList);
+    //console.log("I got the categories");
   }
 
   // Function to render a list of categories
@@ -37,7 +37,7 @@ $(document).ready(function() {
     return listOption;
   }
 
-  getCategories();
+  // getCategories();
 
   $("#joke-form").on("submit", function handleFormSubmit(event) {
     event.preventDefault();
@@ -58,9 +58,12 @@ $(document).ready(function() {
   });
 
   function submitPost(Post) {
-    $.post("/api/posts/", Post, function() {
-      window.location.href = "/index";
+    $.post("/api/posts/", Post, function(newItem) {
+
+      console.log(newItem.entry);
+      console.log(newItem.icy);
+      console.log(newItem.spicy);     
+      // window.location.href = "/index";
     });
   }
-
 });

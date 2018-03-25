@@ -113,12 +113,12 @@ footer{
 	width: 900px;
 }
 
-#joke-form{
+/*#joke-form{
   margin-top:50px;
 	padding: 20px;
 	background-color: lightpink;
 	box-shadow: -10px 10px 10px darkgrey;
-}
+}*/
 
 #submit-button{
 	border-radius: 0px;
@@ -131,4 +131,14 @@ footer{
 	margin-top:30px;
 	text-align: center;
 	margin: auto;
+}
+
+/*Modal ===============================================*/
+.modal-content {
+  border-radius: 0px;
+  background-color: lightpink;
+}
+
+.modal-header {
+  border-bottom: none;
 }
