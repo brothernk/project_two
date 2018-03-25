@@ -19,9 +19,9 @@ module.exports = function(app){
     })
   });
 
-  //Render edit page
-  app.get('/edit', function (req, res) {
-    res.render("edit");
-  });
+  // //Render edit page
+  // app.get('/edit', function (req, res) {
+  //   res.render("edit");
+  // });
 
 };

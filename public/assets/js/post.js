@@ -58,9 +58,12 @@ $(document).ready(function() {
   });
 
   function submitPost(Post) {
-    $.post("/api/posts/", Post, function() {
-      window.location.href = "/index";
+    $.post("/api/posts/", Post, function(newItem) {
+
+      console.log(newItem.entry);
+      console.log(newItem.icy);
+      console.log(newItem.spicy);     
+      // window.location.href = "/index";
     });
   }
-
 });
