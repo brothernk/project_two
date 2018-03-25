@@ -7,7 +7,8 @@ html, body{
 
 body{
 	font-family: "Barlow Condensed", sans-serif;
-	border:20px solid lightgrey;
+	background-color: #FE5F55;
+	background-image: url("halftone.png");
 }
 
 .container{
@@ -15,8 +16,8 @@ body{
 	padding: 0;
 }
 
-/*Vectors ===============================================*/
-#logo-main, #logo-secondary{
+/*Vectors ==================================================*/
+#logo-main{
 	background-image: url("spicyburnzcopy.svg");
 	height:300px;
 	background-repeat: no-repeat;
@@ -24,37 +25,29 @@ body{
 	margin-top:20px;
 }
 
-#logo-secondary{
-	height: 100px;
-}
-
-/*#flame {
-	background-image: url("flame.png");
-	background-size: 70%;
-	background-repeat: no-repeat;
-	height:350px;
-	bottom: 0;
-	position: absolute;
-}*/
-
 /*Navigation ===============================================*/
 .nav-bar{
-	margin-top:30px;
+	margin:auto;
+	text-align: center;
 }
 
 .links, .links:hover{
-	border:2px solid black;
+	margin:auto;
+	border:2px solid #231f20;
 	padding: 7px;
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 20px;
 	font-weight: bold;
 	text-decoration: none;
-	color:black;
+	color:#231f20;
+	margin:0px 5px 0px 5px;
 }
 
 .links:hover{
-	
+	border:2px solid #FE5F55;
+	background-color:#FE5F55; 
+	cursor: pointer;
 }
 
 /*Text ===============================================*/
@@ -65,11 +58,14 @@ body{
 #instructions {
 	padding: 5px;
 	margin-top: 60px;
-	text-align: left;
+	margin-bottom: 60px;
+	text-align: center;
+	color: #231f20;
 }
 
 #instruction-div{
-	left: 500px;
+	margin:auto;
+	left: 50px;
 }
 
 footer{
@@ -79,7 +75,7 @@ footer{
 /*Jokes ===============================================*/
 #joke-list{
 	margin: auto;
-	margin-top:30px;
+	margin-top:20px;
 	text-align: center;
 	display: none;
 	font-size: 18px;
@@ -90,16 +86,17 @@ footer{
 	padding-top:25px;
 	width: 1000px;
 	margin-bottom:20px;
+	color: white;
+	border-bottom:5px solid #FE5F55;
 }
 
 #individual-joke[data-guessed="false"] {
-  background-color: #cbcbcb;
+  background-color: #231f20;
 }
 
 #individual-joke[data-guessed="true"] {
-  background-color: #ffffff; 
+  background-color: #231f20; 
 }
-
 
 /* Spicy and Icy Number ===================================*/
 .value {
@@ -113,13 +110,6 @@ footer{
 	width: 900px;
 }
 
-/*#joke-form{
-  margin-top:50px;
-	padding: 20px;
-	background-color: lightpink;
-	box-shadow: -10px 10px 10px darkgrey;
-}*/
-
 #submit-button{
 	border-radius: 0px;
 	text-transform: uppercase;
@@ -127,16 +117,11 @@ footer{
 	border:none;
 }
 
-#not-funny{
-	margin-top:30px;
-	text-align: center;
-	margin: auto;
-}
-
 /*Modal ===============================================*/
 .modal-content {
   border-radius: 0px;
-  background-color: lightpink;
+  border:none;
+  background-color: #FE5F55;
 }
 
 .modal-header {

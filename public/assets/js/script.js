@@ -4,9 +4,13 @@ $(document).ready(function() {
   // $('#myModal').modal();
   // $('#myModal').modal('open');
   //Click Events
-  $("#flame").click(function(){
+  $("#show-jokes").click(function(){
     $("#index-page").hide();
     $("#joke-list").show();
+    // $("#instructions").hide();
+    // $("#flame").hide();
+    $(".links").hide();
+    $("#logo-main").animate({height:"90px"});
     $("#logo-main").animate({height:"100px"});
   });
 
