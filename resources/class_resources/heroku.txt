@@ -1,0 +1,2 @@
+Deploying to Heroku with Sequelize and JawsDB:
+https://www.youtube.com/watch?v=edh8vi89a7M
