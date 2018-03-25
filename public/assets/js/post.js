@@ -11,7 +11,7 @@ $(document).ready(function() {
   // A function to get the categories and then render our list of categories
   //it comes to this function but cannot get the categories
   function getCategories() {
-    $.get("/api/categories", renderCategoryList);
+    // $.get("/api/categories", renderCategoryList);
     console.log("I got the categories");
   }
 
@@ -37,7 +37,7 @@ $(document).ready(function() {
     return listOption;
   }
 
-  getCategories();
+  // getCategories();
 
   $("#joke-form").on("submit", function handleFormSubmit(event) {
     event.preventDefault();
