@@ -15,8 +15,8 @@
       </h5>
       <div class="nav-bar">
 
-        <!-- Button to trigger modal -->
-        <a class="links" data-toggle="modal" data-target="#exampleModalCenter" {{!-- id="#myModal" --}}> Add your own </a>
+        {{!-- Open Modal Button --}}
+        <a class="links" data-toggle="modal" data-target="#exampleModalCenter"> Add your own </a>
        
         <br>
         <a href="https://www.facebook.com/sharer/sharer.php?u=spicyburnz.com" target="_blank">
@@ -30,15 +30,15 @@
 
 {{!-- List Page --}}
 <div class="container" id="joke-list">
-
-  <a class="links" data-toggle="modal" data-target="#exampleModalCenter" {{!-- id="#myModal" --}}> Add your own </a>
+  {{!-- Open Modal Button --}}
+  <a class="links" data-toggle="modal" data-target="#exampleModalCenter"> Add your own </a>
 
   {{#each Post}}
 
     <div class="row" data-row-id="{{this.id}}" data-guessed="false" id="individual-joke">
 
       <div class="col-2 spicy-vote" data-id="{{this.id}}" data-spicy="{{this.spicy}}">
-        <button class="btn btn-danger" id="spicy-button"><i class="fas fa-fire"></i></i> Spicy <div class="value">{{!-- {{this.spicy}} --}}</div></button>
+        <button class="btn btn-danger" id="spicy-button"><i class="fas fa-fire"></i></i> Spicy <div class="value"></div></button>
       </div>
 
       <div class="col-8 mb-3">
@@ -46,7 +46,7 @@
       </div>
 
       <div class="col-2 icy-vote" data-id="{{this.id}}" data-icy="{{this.icy}}">
-        <button class="btn btn-info"><i class="far fa-snowflake"></i> Icy <div class="value">{{!-- {{this.icy}} --}}</div></button>
+        <button class="btn btn-info"><i class="far fa-snowflake"></i> Icy <div class="value"></div></button>
       </div>
 
     </div>
@@ -54,7 +54,6 @@
   {{/each}}
 
 </div>
-
 
 
  <!-- Modal -->

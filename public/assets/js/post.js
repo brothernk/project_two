@@ -12,7 +12,7 @@ $(document).ready(function() {
   //it comes to this function but cannot get the categories
   function getCategories() {
     // $.get("/api/categories", renderCategoryList);
-    console.log("I got the categories");
+    //console.log("I got the categories");
   }
 
   // Function to render a list of categories
