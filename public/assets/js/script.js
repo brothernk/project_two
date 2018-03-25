@@ -1,6 +1,8 @@
 //this is for the index page where jokes are voted for
 $(document).ready(function() {
-
+  // Initial modal open 
+  // $('#myModal').modal();
+  // $('#myModal').modal('open');
   //Click Events
   $("#flame").click(function(){
     $("#joke-list").show();
@@ -10,6 +12,8 @@ $(document).ready(function() {
     $("#logo-main").animate({height:"100px"});
   });
 
+
+  
   //Scroll Events
   // window.sr = ScrollReveal();
   //   sr.reveal("#joke-list");
