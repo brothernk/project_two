@@ -28,16 +28,14 @@ body{
 	height: 100px;
 }
 
-#flame {
-	background-color: red;
-	height:300px;
+/*#flame {
+	background-image: url("flame.png");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	height:350px;
 	bottom: 0;
 	position: absolute;
-}
-
-#instruction-div{
-	left: 500px;
-}
+}*/
 
 /*Navigation ===============================================*/
 .nav-bar{
@@ -68,9 +66,17 @@ body{
 	padding: 5px;
 	margin-top: 60px;
 	text-align: left;
-	width:650px;
 }
 
+#instruction-div{
+	left: 500px;
+}
+
+footer{
+	font-size: 12px;
+}
+
+/*Jokes ===============================================*/
 #joke-list{
 	margin: auto;
 	margin-top:30px;
@@ -81,7 +87,6 @@ body{
 
 #individual-joke{
 	margin: auto;
-	border:1px solid black;
 	padding-top:25px;
 	width: 1000px;
 	margin-bottom:20px;
@@ -96,17 +101,13 @@ body{
 }
 
 
-footer{
-	font-size: 12px;
-}
-
 /* Spicy and Icy Number ===================================*/
 .value {
   display: inline;
   margin: 10px;
 }
 
-/*Joke Page ===============================================*/
+/*Add Your Own Page ===============================================*/
 #add-joke-page{
 	margin: auto;
 	width: 900px;

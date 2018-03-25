@@ -14,22 +14,23 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-This app requires a number of programs:
+This app requires a number of programs to be installed on your computer:
 * [Node.js](https://nodejs.org/en/)
 * [MySQL Workbench](https://www.mysql.com/products/workbench/)
+
 * NPM Packages: 
 	* [Express](https://www.npmjs.com/package/express)
 	* [Express-Handlers](https://www.npmjs.com/package/express-handlebars)
 	* [Body-Parser](https://www.npmjs.com/package/body-parser)
 	* [MySQL](https://www.npmjs.com/package/mysql)
-  * [MySQL2]()
+  * [MySQL2](https://www.npmjs.com/package/mysql2)
 	* [dotenv](https://www.npmjs.com/package/dotenv)
-  * [fs]()
-  * [nightmare]()
+  * [fs](https://www.npmjs.com/package/fs)
+  * [nightmare](https://www.npmjs.com/package/nightmare)
   * [npm]()
-  * [path]()
-  * [sequelize]()
-  * [sequelize-cli]()
+  * [path](https://www.npmjs.com/package/path)
+  * [sequelize](https://www.npmjs.com/package/sequelize)
+  * [sequelize-cli](https://www.npmjs.com/package/sequelize-cli)
 
 
 #### Directory structure
@@ -37,24 +38,31 @@ This app requires a number of programs:
 All the recommended files and directories from the steps above should look like the following structure:
 
 ```
-Eat-Da-Burger
+project_two
 │
 ├── config
-│   ├── connection.js
-│   └── orm.js
-│ 
-├── controllers
-│   └── burgers_controller.js
-│
-├── db
-│   ├── schema.sql
-│   └── seeds.sql
+│   └── config.json
 │
 ├── models
-│   └── burger.js
-│ 
+│   ├── category.js
+│   ├── index.js
+│   └── post.js
+│
 ├── node_modules
 │ 
+├── public
+│   ├── assets
+│   │	  ├── css
+│   │   │   ├── reset.css
+│   │   │   ├── spicyburnz.svg
+
+│   │   ├── img
+│   │   │   └── burger.png
+│   │   └── js
+│   │   	 └── burgers.js
+│   │
+│   └── test.html
+│
 ├── package.json
 │ 
 ├──.env
