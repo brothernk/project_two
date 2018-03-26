@@ -5,10 +5,7 @@ const Sequelize = require('sequelize');
 //Routing
 module.exports = function(app){
 
-	//do we want to just post the jokes that have less than x total votes
-	//so that they are the ones that have to be voted on first?
-
-	//GET Routing for getting all of the posts
+	//GET Routing for getting all of the jokes
   	app.get("/api/posts", function(request, response) {
 	    let query = {};
 	    if (request.query.category_id) {
@@ -39,20 +36,9 @@ module.exports = function(app){
 			response.json(dbPost);
 		});
 	});
-  
-	//DELETE Routing
-	app.delete("/api/post", function(request, response){
-		db.Post.destroy({
-			where: {
-				id:request.params.id
-			}
-		}).then(function(dbPost){
-			response.json(dbPost);
-		});
-	});
 
-  // PUT Routing
-  app.put("/api/posts", function(request, response){
+  	// PUT Routing
+  	app.put("/api/posts", function(request, response){
 	   db.Post.update(
 	      request.body,
 	    {

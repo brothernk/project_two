@@ -9,10 +9,6 @@ module.exports = function(sequelize, DataTypes) {
     });
   };
 
-  // Category.create( {name: "Dad"} );
-  // Category.create( {name: "Sven and Ole"} );
-  // Category.create( {name: "Work"} );
-
   return Category;
   
 };
