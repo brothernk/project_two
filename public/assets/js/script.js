@@ -5,8 +5,6 @@ $(document).ready(function() {
   $("#show-jokes").click(function(){
     $("#index-page").hide();
     $("#joke-list").show();
-    // $("#instructions").hide();
-    // $("#flame").hide();
     $(".links").animate({left:"700px"});
     $("#logo-main").animate({height:"90px"});
   });
@@ -26,9 +24,6 @@ $(document).ready(function() {
     $("#logo-main").animate({height:"100px"});
     // $('#exampleModalCenter').modal('hide');
   });
-
-
-
 
   //Scroll Events
   // window.sr = ScrollReveal({ duration: 2000 });
