@@ -33,7 +33,7 @@ $(document).ready(function() {
   //Scroll Events
   // window.sr = ScrollReveal({ duration: 2000 });
   //   sr.reveal('#individual-joke', 50);
-  $("#individual-joke").animateScroll(); 
+  // $("#individual-joke").animateScroll(); 
 
   //Create container for all of the items
   let itemContainer = $(" ");
