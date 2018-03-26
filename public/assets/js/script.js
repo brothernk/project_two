@@ -1,17 +1,14 @@
 //this is for the index page where jokes are voted for
 $(document).ready(function() {
-  // Initial modal open 
-  // $('#myModal').modal();
-  // $('#myModal').modal('open');
+
   //Click Events
   $("#show-jokes").click(function(){
     $("#index-page").hide();
     $("#joke-list").show();
     // $("#instructions").hide();
     // $("#flame").hide();
-    $(".links").hide();
+    $(".links").animate({left:"700px"});
     $("#logo-main").animate({height:"90px"});
-    $("#logo-main").animate({height:"100px"});
   });
 
 // Modal Buttons
@@ -34,8 +31,9 @@ $(document).ready(function() {
 
 
   //Scroll Events
-  // window.sr = ScrollReveal();
-  //   sr.reveal("#joke-list");
+  // window.sr = ScrollReveal({ duration: 2000 });
+  //   sr.reveal('#individual-joke', 50);
+  $("#individual-joke").animateScroll(); 
 
   //Create container for all of the items
   let itemContainer = $(" ");

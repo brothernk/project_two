@@ -88,6 +88,7 @@ footer{
 	margin-bottom:20px;
 	color: white;
 	border-bottom:5px solid #FE5F55;
+	box-shadow: -10px 10px 10px darkgrey;
 }
 
 #individual-joke[data-guessed="false"] {
@@ -95,26 +96,14 @@ footer{
 }
 
 #individual-joke[data-guessed="true"] {
-  background-color: #231f20; 
+  background-color: #FE5F55; 
+  border-bottom: 5px solid #FE5F55;
 }
 
 /* Spicy and Icy Number ===================================*/
 .value {
   display: inline;
   margin: 10px;
-}
-
-/*Add Your Own Page ===============================================*/
-#add-joke-page{
-	margin: auto;
-	width: 900px;
-}
-
-#submit-button{
-	border-radius: 0px;
-	text-transform: uppercase;
-	background-color: black;
-	border:none;
 }
 
 /*Modal ===============================================*/
