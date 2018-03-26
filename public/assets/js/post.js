@@ -11,8 +11,7 @@ $(document).ready(function() {
   // A function to get the categories and then render our list of categories
   //it comes to this function but cannot get the categories
   function getCategories() {
-    // $.get("/api/categories", renderCategoryList);
-    //console.log("I got the categories");
+    $.get("/api/categories", renderCategoryList);
   }
 
   // Function to render a list of categories
@@ -37,7 +36,7 @@ $(document).ready(function() {
     return listOption;
   }
 
-  // getCategories();
+  getCategories();
 
   $("#joke-form").on("submit", function handleFormSubmit(event) {
     event.preventDefault();
@@ -72,14 +71,14 @@ $(document).ready(function() {
       ''+
       '  <div class="col-8 mb-3">'+
       '    <p>{{this.entry}}</p>'+
-      '    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">'+
-      '      <a class="a2a_dd" href="https://www.addtoany.com/share"></a>'+
-      '      <a class="a2a_button_facebook"></a>'+
-      '      <a class="a2a_button_twitter"></a>'+
-      '      <a class="a2a_button_google_plus"></a>'+
-      '      <a class="a2a_button_facebook_messenger"></a>'+
-      '    </div>'+
-      '    <script async src="https://static.addtoany.com/menu/page.js"></script>'+
+      // '    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">'+
+      // '      <a class="a2a_dd" href="https://www.addtoany.com/share"></a>'+
+      // '      <a class="a2a_button_facebook"></a>'+
+      // '      <a class="a2a_button_twitter"></a>'+
+      // '      <a class="a2a_button_google_plus"></a>'+
+      // '      <a class="a2a_button_facebook_messenger"></a>'+
+      // '    </div>'+
+      // '    <script async src="https://static.addtoany.com/menu/page.js"></script>'+
       '  </div>'+
       ''+
       '  <div class="col-2 icy-vote" data-id="{{this.id}}" data-icy="{{this.icy}}">'+

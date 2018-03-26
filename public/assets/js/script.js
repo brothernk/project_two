@@ -5,8 +5,6 @@ $(document).ready(function() {
   $("#show-jokes").click(function(){
     $("#index-page").hide();
     $("#joke-list").show();
-    // $("#instructions").hide();
-    // $("#flame").hide();
     $(".links").animate({left:"700px"});
     $("#logo-main").animate({height:"90px"});
   });
@@ -27,13 +25,10 @@ $(document).ready(function() {
     // $('#exampleModalCenter').modal('hide');
   });
 
-
-
-
   //Scroll Events
   // window.sr = ScrollReveal({ duration: 2000 });
   //   sr.reveal('#individual-joke', 50);
-  $("#individual-joke").animateScroll(); 
+  // $("#individual-joke").animateScroll(); 
 
   //Create container for all of the items
   let itemContainer = $(" ");
