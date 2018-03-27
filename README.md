@@ -166,6 +166,7 @@ As you can see from the image there are 3 columns: Ready to Eat da Burger, Devou
 * In the `Ready to Eat da Burger` column, if you hit the `Devour It !` button it will change the devour status to true in MySQL, which will place the burger in the Devoured Burgers column. This burger will still be listed in MySQL. For example, if you choose to devour the Grilled Onion Cheeseburger, this is what it looks like in MySQL. Note that the Devour number is a 0 which equals true:
 
 * Here is the page when you click the Add a Joke button:
+
 	![Image of Adding a Joke](./public/assets/imgages/addajoke.PNG)
 
 
