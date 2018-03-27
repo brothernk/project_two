@@ -47,6 +47,8 @@ $(document).ready(function() {
   let categoryId;
 
 
+  scrollReveal.prototype.isElemInViewport = function () { return true; };
+
   //Update Votes
   $(document).on("click", ".spicy-vote", spicyVote); 
   $(document).on("click", ".icy-vote", icyVote); 
