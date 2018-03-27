@@ -195,11 +195,11 @@ project_two
 
 * To show you how the database has changed, here is the database before rating the jokes. Note the Spicy and Icy values of the top three jokes:
 
-	![MySQL Before Rating Jokes](./public/assets/images/mysqlbefore.PNG)
+	![MySQL Before Rating Jokes](./public/assets/images/mysqlbeforejudge.PNG)
 
 * Here is the database after rating the jokes. Note either the Spicy or Icy values of each joke have change:
 
-	![MySQL After Rating Jokes](./public/assets/images/mysqlafter.PNG) 
+	![MySQL After Rating Jokes](./public/assets/images/mysqlafterjudge.PNG) 
 
 
 ## Deployment
