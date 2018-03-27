@@ -112,7 +112,24 @@ footer{
 /* Joke Category ================================*/
 
 .category {
-  color: yellow;
+  background-color: salmon;
+}
+
+/*Burns*/
+.category[data-category-id="1"] {
+  color: red;
+}
+/*Bar Jokes*/
+.category[data-category-id="2"] {
+  color: orange;
+}
+/*Puns*/
+.category[data-category-id="3"] {
+  color: green;
+}
+/*Coding Jokes*/
+.category[data-category-id="4"] {
+  color: blue;
 }
 
 
