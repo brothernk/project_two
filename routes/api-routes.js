@@ -1,19 +1,18 @@
-//Dependencies
 const db = require("../models");
-const Sequelize = require('sequelize');
 
-//Routing
+// //Routing
 module.exports = function(app){
 
 	//GET Routing for getting all of the jokes
   	app.get("/api/posts", function(request, response) {
 	    let query = {};
+
 	    if (request.query.category_id) {
 	      query.CategoryId = request.query.category_id;
-	    }
+	    } 
+
 	    db.Post.findAll({
-	      where: query,
-        include: [{model: models.Category}]
+	      where: query
 	    }).then(function(dbPost) {
 	      response.json(dbPost);
 	    });

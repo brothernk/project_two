@@ -11,7 +11,9 @@ module.exports = function(app){
 
   //Render index
   app.get('/index', function (req, res) {
-    models.Post.findAll()
+    models.Post.findAll({
+        include: [models.Category]
+      })
     .then(function(data){
       var object = { Post: data };
       res.render("index", object);

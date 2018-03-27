@@ -1,7 +1,7 @@
 <div class="row" data-row-id="{{this.id}}" data-guessed="false" id="individual-joke" data-av-animation="slideInRight">
 
   {{!--   Spicy Button --}}
-  <div class="col-2 spicy-vote" data-id="{{this.id}}" data-spicy="{{this.spicy}}" data-text="{{this.entry}}">
+  <div class="col-2 spicy-vote" data-id="{{this.id}}" data-spicy="{{this.spicy}}">
     <button class="btn btn-danger" id="spicy-button">
       <i class="fas fa-fire"></i> Spicy 
       <div class="value"></div>
@@ -10,7 +10,7 @@
 
   <div class="col-8 mb-3">
     <p>{{this.entry}}</p>
-    <div class="category" data-category-id="{{this.CategoryId}}">{{this.Category.id}}{{this.Category.name}}{{this.Category}}</div><p></p>
+    <div class="category" data-category-id="{{this.CategoryId}}">{{this.Category.name}}</div><p></p>
   </div>
 
   {{!--   Icy Button --}}
