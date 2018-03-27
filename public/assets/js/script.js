@@ -11,6 +11,41 @@ $(document).ready(function() {
   //Scroll Events
   window.sr = ScrollReveal({ duration: 2000 });
     sr.reveal('#individual-joke');
+    $(".links").animate({left:"700px"});
+    $("#logo-main").animate({height:"90px"});
+  });
+
+// Modal Buttons
+  $("#judge-button").click(function(){
+    $("#index-page").hide();
+    $("#joke-list").show();
+    $("#logo-main").animate({height:"100px"});
+    // $('#exampleModalCenter').modal('hide');
+  });
+
+
+  $("#judge-button").click(function(){
+    $("#index-page").hide();
+    $("#joke-list").show();
+    $("#logo-main").animate({height:"100px"});
+    // $('#exampleModalCenter').modal('hide');
+  });
+
+  //Scroll Events
+  // window.sr = ScrollReveal({ duration: 2000 });
+  //   sr.reveal('#individual-joke', 50);
+  // $("#individual-joke").animateScroll(); 
+
+  //Create container for all of the items
+  let itemContainer = $(" ");
+
+  //Holds items
+  let items;
+
+  //Code for getting a specific category will go here
+  let url = window.location.search;
+  let categoryId;
+
 
   //Update Votes
   $(document).on("click", ".spicy-vote", spicyVote); 
