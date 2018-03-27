@@ -1,8 +1,6 @@
 # SpicyBurnz
 
-```
 If you just want to judge randos on the internet go ahead - rate some sick burnz. You literally just pick spicy or icy. That's it. Go forth and judge. Or, if you actually think you're funny, prove it.
-```
 
 This app will take you through the fun world of jokes and burns. Be prepared to laugh and share one with your neighbor! You are brought to the main page where you have options of:
 ```
@@ -22,7 +20,7 @@ If you choose to `Add Your Own`, a `Make us Laugh` modal will pop up and you can
  * Yellow = Coding Jokes
  * Blue = Puns
 
-![Category colors for burns and bar jokes](./public/assets/imgages/burnsbar.PNG)
+![Category colors for burns and bar jokes](../public/assets/imgages/burnsbar.PNG)
 ![Category colors for puns and coding jokes](./public/assets/imgages/punscoding.PNG)
 
 
