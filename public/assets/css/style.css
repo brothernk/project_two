@@ -11,7 +11,7 @@ body{
 	background-image: url("halftone.png");
 }
 
-.container{
+.container, .row, .col{
 	margin: 0;
 	padding: 0;
 }
@@ -42,12 +42,21 @@ body{
 	text-decoration: none;
 	color:#231f20;
 	margin:0px 5px 0px 5px;
+	z-index: 1;
 }
 
 .links:hover{
 	border:2px solid #FE5F55;
 	background-color:#FE5F55; 
 	cursor: pointer;
+}
+
+#add-button {
+	color: white;
+	border:2px solid #1e8495;
+	background-color: #1e8495;
+	position: fixed;
+	bottom: 0;
 }
 
 /*Text ===============================================*/
@@ -100,7 +109,7 @@ footer{
   border-bottom: 5px solid #FE5F55;
 }
 
-/* Spicy and Icy Number ===================================*/
+/* Spicy and Icy Number ================================*/
 .value {
   display: inline;
   margin: 10px;

@@ -1,6 +1,5 @@
 //Dependencies
-//const path = require("path");
-var models = require('../models');
+const models = require('../models');
 
 //Routing
 module.exports = function(app){
@@ -18,10 +17,4 @@ module.exports = function(app){
       res.render("index", object);
     })
   });
-
-  // //Render edit page
-  // app.get('/edit', function (req, res) {
-  //   res.render("edit");
-  // });
-
 };
