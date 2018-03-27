@@ -1,8 +1,6 @@
 # SpicyBurnz
 
-```
 If you just want to judge randos on the internet go ahead - rate some sick burnz. You literally just pick spicy or icy. That's it. Go forth and judge. Or, if you actually think you're funny, prove it.
-```
 
 This app will take you through the fun world of jokes and burns. Be prepared to laugh and share one with your neighbor! You are brought to the main page where you have options of:
 ```
@@ -22,7 +20,7 @@ If you choose to `Add Your Own`, a `Make us Laugh` modal will pop up and you can
  * Yellow = Coding Jokes
  * Blue = Puns
 
-![Category colors for burns and bar jokes](./public/assets/imgages/burnsbar.PNG)
+![Category colors for burns and bar jokes](../public/assets/imgages/burnsbar.PNG)
 ![Category colors for puns and coding jokes](./public/assets/imgages/punscoding.PNG)
 
 
@@ -39,12 +37,12 @@ This app requires two programs to be installed on your computer:
 * [MySQL Workbench](https://www.mysql.com/products/workbench/)
 
 It also requires a number of NPM Packages: 
-	* [Express](https://www.npmjs.com/package/express)
+  * [Express](https://www.npmjs.com/package/express)
   * [Express-Handlers](https://www.npmjs.com/package/express-handlebars)
-	* [Body-Parser](https://www.npmjs.com/package/body-parser)
-	* [MySQL](https://www.npmjs.com/package/mysql)
+  * [Body-Parser](https://www.npmjs.com/package/body-parser)
+  * [MySQL](https://www.npmjs.com/package/mysql)
   * [MySQL2](https://www.npmjs.com/package/mysql2)
-	* [dotenv](https://www.npmjs.com/package/dotenv)
+  * [dotenv](https://www.npmjs.com/package/dotenv)
   * [fs](https://www.npmjs.com/package/fs)
   * [nightmare](https://www.npmjs.com/package/nightmare)
   * [npm](https://www.npmjs.com/package/npm)
@@ -159,6 +157,7 @@ project_two
 
 ![Image of Command Line](./public/assets/images/commandline.PNG)
 
+
 1. Go to your browser and open a new tab and type `localhost:3000` then hit enter. This is what you should see:
 
 ![Image of App in Browser](./public/assets/images/startpage.PNG)
@@ -173,6 +172,7 @@ project_two
 
 * A modal will open titled `Make Us Laugh`, here I have added a joke:
 	![Image of Adding a Joke](./public/assets/images/addajoke.PNG)
+
 
 
 * Here is the database before added a joke, please note that the joke has not been added yet:
@@ -219,6 +219,7 @@ This was a group effort, with a great group of coders to work with. Below are th
 
 
 ## Issues or Future wants for the App
+
 
 We did not have the time to add `Share A Joke` button, which will allow you to share a joke you like with a friend via either FaceBook or Twitter. Here is the link to the what we found to help us share:
 [Find out more.](https://developers.facebook.com/docs/plugins/share-button) 
