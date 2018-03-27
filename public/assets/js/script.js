@@ -6,7 +6,6 @@ $(document).ready(function() {
     $("#index-page").hide();
     $("#joke-list").show();
     $("#logo-main").animate({height:"90px"});
-    $("#logo-main").animate({top:"20px"})
   });
 
   //Scroll Events
