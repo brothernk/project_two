@@ -18,11 +18,12 @@
   </div>
 </div>
 
-
 {{!-- List Page --}}
 <div class="container" id="joke-list">
   {{!-- Open Modal Button --}}
-  <a class="links" data-toggle="modal" data-target="#exampleModalCenter"> Add your own </a>
+  <div class="row" id="joke-list-header">
+    <a class="links" data-toggle="modal" data-target="#exampleModalCenter" id="add-button">Not funny enough for you? Add your own.</a>
+  </div>
 
   {{#each Post}}
     {{> joke }}
@@ -30,8 +31,7 @@
 
 </div>
 
-
- <!-- Modal -->
+<!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
@@ -51,15 +51,9 @@
               <select class="form-control" id="category">
               </select>
             </div>
-            <br/>
             <button type="submit" class="btn btn-secondary submit" id="submit-button">Add Joke</button>
           </div>
         </form>
-        {{!--    <div class="col-6" id="not-funny"> --}}
-        {{!--    <h5>Realized you aren't actually funny? That's chill, go back to anonymously judging other people.</h5> --}}
-        {{!--    <div class="nav-bar"> --}}
-        {{!--    </div> --}}
-        {{!--    </div> --}}
       </div>
     </div>
   </div>

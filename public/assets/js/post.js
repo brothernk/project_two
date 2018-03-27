@@ -1,20 +1,22 @@
-//this is edit page where jokes can be added
+//Add Jokes Page
 $(document).ready(function() {
-  // Sets a flag for whether or not we're updating a post to be false initially
+
+  //Sets a flag for whether or not we're updating a post to be false initially
   var updating = false;
 
+  //Cotainer to hold jokes
   var bodyInput = $("#body");
   var categorySelect = $("#category");
   var listOption;
   var CategoryId;
 
-  // A function to get the categories and then render our list of categories
-  //it comes to this function but cannot get the categories
+  //Function to get categories
   function getCategories() {
     $.get("/api/categories", renderCategoryList);
+
   }
 
-  // Function to render a list of categories
+  //Render list of categories
   function renderCategoryList(data) {
 
     var rowsToAdd = [];
@@ -28,7 +30,7 @@ $(document).ready(function() {
     //categorySelect.val(categoryId);
   }
 
-  // Creates the category options in the dropdown
+  //Creates dropdown category options
   function createCategoryRow(category) {
     var listOption = $("<option>");
     listOption.attr("value", category.id);
@@ -41,7 +43,7 @@ $(document).ready(function() {
   $("#joke-form").on("submit", function handleFormSubmit(event) {
     event.preventDefault();
 
-    // Wont submit the post if entry is blank
+    //Won't submit post if entry is blank
     if (!$(bodyInput).val().trim()) {
       return;
     }
@@ -52,12 +54,10 @@ $(document).ready(function() {
     };
 
     submitPost(newJoke);
-    console.log(newJoke);
-
   });
 
 
-
+  //Submit new joke
   function submitPost(Post) {
     $.post("/api/posts/", Post, function(newItem) {
 
@@ -71,6 +71,7 @@ $(document).ready(function() {
       ''+
       '  <div class="col-8 mb-3">'+
       '    <p>{{this.entry}}</p>'+
+
       // '    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">'+
       // '      <a class="a2a_dd" href="https://www.addtoany.com/share"></a>'+
       // '      <a class="a2a_button_facebook"></a>'+
@@ -79,6 +80,7 @@ $(document).ready(function() {
       // '      <a class="a2a_button_facebook_messenger"></a>'+
       // '    </div>'+
       // '    <script async src="https://static.addtoany.com/menu/page.js"></script>'+
+
       '  </div>'+
       ''+
       '  <div class="col-2 icy-vote" data-id="{{this.id}}" data-icy="{{this.icy}}">'+
@@ -90,17 +92,16 @@ $(document).ready(function() {
       '  '+
       '</div>');
 
-      // add new joke to our page
+      //Add new joke to bottom of page
       $("#joke-list").append(template(newItem));
-      // clear the modal form
+      //Clear modal form
       $("#joke-form").trigger('reset');
-      // simulate close button
+      //Simulate close button
       $(".close")[0].click();
-      // "navigate" to the correct page
+      //"Navigate" to correct page
       $("#index-page").hide();
       $("#joke-list").show();
       $("#logo-main").animate({height:"100px"});
-
     });
   }
 });
