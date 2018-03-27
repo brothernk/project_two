@@ -155,7 +155,7 @@ project_two
 
 1. Type `node server.js` end hit enter
 
-![Image of Command Line](./public/assets/imgages/commandline.PNG)
+<img src="public/images/commandline.PNG">
 
 1. Go to your browser and open a new tab and type `localhost:3000` then hit enter. This is what you should see:
 
