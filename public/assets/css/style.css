@@ -94,9 +94,8 @@ footer{
 	margin: auto;
 	padding-top:25px;
 	width: 1000px;
-	margin-bottom:20px;
+	margin-bottom:40px;
 	color: white;
-	border-bottom:2px solid #FE5F55;
 	box-shadow: -10px 10px 10px darkgrey;
 }
 
@@ -106,29 +105,34 @@ footer{
 
 #individual-joke[data-guessed="true"] {
   background-color: #FE5F55; 
-  border-bottom: 5px solid #FE5F55;
 }
 
 /* Joke Category ================================*/
 .category {
-  background-color: salmon;
+	position: absolute;
+	width: 1000px;
+	margin: auto;
+	text-align: center;
+	margin: 10px 0px -105px -181.5px;
+	font-size: 85%;
+	text-transform: uppercase;
 }
 
 /*Burns*/
 .category[data-category-id="1"] {
-  color: red;
+  background-color: #c62638;
 }
 /*Bar Jokes*/
 .category[data-category-id="2"] {
-  color: orange;
+  background-color: #8D6B94;
 }
 /*Puns*/
 .category[data-category-id="3"] {
-  color: green;
+  background-color: #1e8495;
 }
 /*Coding Jokes*/
 .category[data-category-id="4"] {
-  color: blue;
+  background-color: #FFBC42;
 }
 
 /* Spicy and Icy Number ================================*/

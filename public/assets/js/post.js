@@ -13,7 +13,6 @@ $(document).ready(function() {
   //Function to get categories
   function getCategories() {
     $.get("/api/categories", renderCategoryList);
-
   }
 
   //Render list of categories
