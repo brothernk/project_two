@@ -1,7 +1,8 @@
 # SpicyBurnz
 
 If you just want to judge randos on the internet go ahead - rate some sick burnz. You literally just pick spicy or icy. That's it. Go forth and judge. Or, if you actually think you're funny, prove it.
-
+	![Image of App in Browser](./public/assets/images/startpage.PNG)
+	
 This app will take you through the fun world of jokes and burns. Be prepared to laugh and share one with your neighbor! You are brought to the main page where you have options of:
 ```
   1. Show Jokes
@@ -155,7 +156,7 @@ project_two
 
 1. Type `node server.js` end hit enter
 
-<img src="public/assets/images/commandline.PNG">
+![Image of Command Line](./public/assets/images/commandline.PNG)
 
 1. Go to your browser and open a new tab and type `localhost:3000` then hit enter. This is what you should see:
 
@@ -167,9 +168,7 @@ project_two
 
 **Clicking Add Your Own Button**
 
-* When you click on the `Add Your Own` button 
-
-* A modal will open titled `Make Us Laugh`, here I have added a joke:
+* When you click on the `Add Your Own` button a modal will open titled `Make Us Laugh`, here I have added a joke:
 
 	![Image of Adding a Joke](./public/assets/images/addajoke.PNG)
 
@@ -178,7 +177,7 @@ project_two
 	![Image of MySQL Before Adding a Joke](./public/assets/images/mysqlbeforeadd.PNG)
 
 
-  * Here is the database after added a joke, you can see the joke I added is now at the bottom of the rows:
+* Here is the database after added a joke, you can see the joke I added is now at the bottom of the rows:
 	![Image of MySQL after Adding a Joke](./public/assets/images/mysqlafteradd.PNG)
 
 
@@ -193,7 +192,6 @@ project_two
 * Here is the page after I rated the jokes to be Spicy or Icy:
 
 	![Page After Judging Joke to be Spicy or Icy](./public/assets/images/judgejokesafter.PNG)
-
 
 * To show you how the database has changed, here is the database before rating the jokes. Note the Spicy and Icy values of the top three jokes:
 
