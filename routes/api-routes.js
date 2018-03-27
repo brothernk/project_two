@@ -12,7 +12,8 @@ module.exports = function(app){
 	      query.CategoryId = request.query.category_id;
 	    }
 	    db.Post.findAll({
-	      where: query
+	      where: query,
+        include: [{model: models.Category}]
 	    }).then(function(dbPost) {
 	      response.json(dbPost);
 	    });
@@ -25,7 +26,7 @@ module.exports = function(app){
 	        id: request.params.id
 	      }
 	    }).then(function(dbPost) {
-	    //  console.log(dbPost);
+	    // console.log(dbPost);
 	      response.json(dbPost);
 	    });
 	});
