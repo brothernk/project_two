@@ -37,12 +37,12 @@ This app requires two programs to be installed on your computer:
 * [MySQL Workbench](https://www.mysql.com/products/workbench/)
 
 It also requires a number of NPM Packages: 
-	* [Express](https://www.npmjs.com/package/express)
+  * [Express](https://www.npmjs.com/package/express)
   * [Express-Handlers](https://www.npmjs.com/package/express-handlebars)
-	* [Body-Parser](https://www.npmjs.com/package/body-parser)
-	* [MySQL](https://www.npmjs.com/package/mysql)
+  * [Body-Parser](https://www.npmjs.com/package/body-parser)
+  * [MySQL](https://www.npmjs.com/package/mysql)
   * [MySQL2](https://www.npmjs.com/package/mysql2)
-	* [dotenv](https://www.npmjs.com/package/dotenv)
+  * [dotenv](https://www.npmjs.com/package/dotenv)
   * [fs](https://www.npmjs.com/package/fs)
   * [nightmare](https://www.npmjs.com/package/nightmare)
   * [npm](https://www.npmjs.com/package/npm)
@@ -155,7 +155,7 @@ project_two
 
 1. Type `node server.js` end hit enter
 
-<img src="public/images/commandline.PNG">
+<img src="public/assets/images/commandline.PNG">
 
 1. Go to your browser and open a new tab and type `localhost:3000` then hit enter. This is what you should see:
 
