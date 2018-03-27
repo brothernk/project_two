@@ -172,6 +172,7 @@ project_two
 * When you click on the `Add Your Own` button 
 
 * A modal will open titled `Make Us Laugh`, here I have added a joke:
+
 	![Image of Adding a Joke](./public/assets/imgages/addajoke.PNG)
 
 
@@ -219,6 +220,7 @@ This was a group effort, with a great group of coders to work with. Below are th
 
 
 ## Issues or Future wants for the App
+
 
 We did not have the time to add `Share A Joke` button, which will allow you to share a joke you like with a friend via either FaceBook or Twitter. Here is the link to the what we found to help us share:
 [Find out more.](https://developers.facebook.com/docs/plugins/share-button) 
