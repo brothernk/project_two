@@ -9,9 +9,19 @@ This app will take you through the fun world of jokes and burns. Be prepared to 
 
 If you choose to Judge the Jokes you will be allowed to pick is either Spicy or Icy. Once you pick a rating for the joke you are then shown the total ratings that were already given by other users. This way the user is not influenced by the previous ratings, so it is more honest.
 
-If you choose to Make us Laugh, a modal will pop up and you can add a joke and choose a category to put the joke in and submit. Once you submit the joke it is added to the database. Then the Juge a Joke page opens and you can see your joke added at the bottom. 
+If you choose to Make us Laugh, a modal will pop up and you can add a joke and choose a category from the drop down menu. Once you submit the joke it is added to the database. Then the Juge a Joke page opens and you can see your joke added at the bottom. 
 
-??????????The jokes are colored by category?????
+ The jokes are colored by category:
+
+ * Red = Burns
+ * Purple = Bar Jokes
+ * Yellow = Coding Jokes
+ * Blue = Puns
+
+![Category colors for burns and bar jokes](./public/assets/imgages/burnsbar.PNG)
+![Category colors for puns and coding jokes](./public/assets/imgages/punscoding.PNG)
+
+
 
 ## Getting Started
 
@@ -65,7 +75,7 @@ project_two
 │       │   ├── spicyburnz.svg
 │       │   ├── spicyburnzcopy.svg
 │       │   └── style.css
-│       ├── img
+│       ├── imgages
 │       │   └── 
 │       └── js
 │           ├── category.js
@@ -141,11 +151,11 @@ project_two
 
 1. Type `node server.js` end hit enter
 
-![Image of Command Line](./public/assets/img/commandline.PNG)
+![Image of Command Line](./public/assets/imgages/commandline.PNG)
 
 1. Go to your browser and open a new tab and type `localhost:3000` then hit enter
 
-![Image of App in Browser](./public/assets/img/browserimage.PNG)
+![Image of App in Browser](./public/assets/imgages/startpage.PNG)
 As you can see from the image there are 3 columns: Ready to Eat da Burger, Devoured Burgers, Order da Burger 
 
 
@@ -156,22 +166,16 @@ As you can see from the image there are 3 columns: Ready to Eat da Burger, Devou
 * In the `Ready to Eat da Burger` column, if you hit the `Devour It !` button it will change the devour status to true in MySQL, which will place the burger in the Devoured Burgers column. This burger will still be listed in MySQL. For example, if you choose to devour the Grilled Onion Cheeseburger, this is what it looks like in MySQL. Note that the Devour number is a 0 which equals true:
 
 * Here is the page when you click the Add a Joke button:
-	![Image of Adding a Joke](../public/assets/img/addajoke.PNG)
 
-* Here I am submitting the joke:
-  ![Image of Adding a Joke](./public/assets/img/?.PNG)
-
-
-* You can then see the joke that was added at the bottom of the joke page:
-	![Image of after Joke added](./public/assets/img/?.PNG)
+	![Image of Adding a Joke](./public/assets/imgages/addajoke.PNG)
 
 
 * Here is the database before added a joke:
-	![Image of MySQL Before Adding a Joke](./public/assets/img/?.PNG)
+	![Image of MySQL Before Adding a Joke](./public/assets/imgages/mysqlbeforeadd.PNG)
 
 
   * Here is the database after added a joke:
-	![Image of MySQL after Adding a Joke](./public/assets/img/?.PNG)
+	![Image of MySQL after Adding a Joke](./public/assets/imgages/mysqlafteradd.PNG)
 
 
 **Judging or Rating Jokes**
@@ -180,33 +184,25 @@ As you can see from the image there are 3 columns: Ready to Eat da Burger, Devou
 
 * Here is the page before I rated the jokes to be Spicy or Icy:
 	
-	![Page Before Judging Joke to be Spicy or Icy](./public/assets/img/judgejokesbefore.PNG)
+	![Page Before Judging Joke to be Spicy or Icy](./public/assets/imgages/judgejokesbefore.PNG)
 
 * Here is the page after I rated the jokes to be Spicy or Icy:
 
-	![Page After Judging Joke to be Spicy or Icy](./public/assets/img/judgejokesafter.PNG)
+	![Page After Judging Joke to be Spicy or Icy](./public/assets/imgages/judgejokesafter.PNG)
 
 
 * Here is the database before rating the jokes:
 
-	![MySQL Before Rating Jokes](./public/assets/img/mysqlbefore.PNG)
+	![MySQL Before Rating Jokes](./public/assets/imgages/mysqlbefore.PNG)
 
 * Here is the database after rating the jokes:
 
-	![MySQL After Rating Jokes](./public/assets/img/mysqlafter.PNG) 
+	![MySQL After Rating Jokes](./public/assets/imgages/mysqlafter.PNG) 
 
 
 **Sharing a Joke**
 
 One new technology used by us in this app is the share buttons. This allows you to click sharing a joke using either Twitter or FaceBook. [Find out more.](https://developers.facebook.com/docs/plugins/share-button)
-
-* Here is the share a joke using Facebook link:
-	
-	![share a joke using facebook link](./public/assets/img/?.PNG)
-
-* Here is the share a joke using Twitter link:
-	
-	![share a joke using twitter link](./public/assets/img/?.PNG)
 
 
 ## Deployment
