@@ -12,6 +12,8 @@ $(document).ready(function() {
   window.sr = ScrollReveal({ duration: 2000 });
     sr.reveal('#individual-joke');
 
+  scrollReveal.prototype.isElemInViewport = function () { return true; };
+
   //Update Votes
   $(document).on("click", ".spicy-vote", spicyVote); 
   $(document).on("click", ".icy-vote", icyVote); 
