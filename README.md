@@ -155,11 +155,12 @@ project_two
 
 1. Type `node server.js` end hit enter
 
-<img src="public/assets/images/commandline.PNG">
+![Image of Command Line](./public/assets/images/commandline.PNG)
+
 
 1. Go to your browser and open a new tab and type `localhost:3000` then hit enter. This is what you should see:
 
-![Image of App in Browser](./public/assets/imgages/startpage.PNG)
+![Image of App in Browser](./public/assets/images/startpage.PNG)
 
 
 #### Using the App
@@ -170,16 +171,16 @@ project_two
 * When you click on the `Add Your Own` button 
 
 * A modal will open titled `Make Us Laugh`, here I have added a joke:
+	![Image of Adding a Joke](./public/assets/images/addajoke.PNG)
 
-	![Image of Adding a Joke](./public/assets/imgages/addajoke.PNG)
 
 
 * Here is the database before added a joke, please note that the joke has not been added yet:
-	![Image of MySQL Before Adding a Joke](./public/assets/imgages/mysqlbeforeadd.PNG)
+	![Image of MySQL Before Adding a Joke](./public/assets/images/mysqlbeforeadd.PNG)
 
 
   * Here is the database after added a joke, you can see the joke I added is now at the bottom of the rows:
-	![Image of MySQL after Adding a Joke](./public/assets/imgages/mysqlafteradd.PNG)
+	![Image of MySQL after Adding a Joke](./public/assets/images/mysqlafteradd.PNG)
 
 
 **Clicking Show Jokes Button**
@@ -188,20 +189,20 @@ project_two
 
 * Here is the page before I rated the jokes to be either Spicy or Icy:
 	
-	![Page Before Judging Joke to be Spicy or Icy](./public/assets/imgages/judgejokesbefore.PNG)
+	![Page Before Judging Joke to be Spicy or Icy](./public/assets/images/judgejokesbefore.PNG)
 
 * Here is the page after I rated the jokes to be Spicy or Icy:
 
-	![Page After Judging Joke to be Spicy or Icy](./public/assets/imgages/judgejokesafter.PNG)
+	![Page After Judging Joke to be Spicy or Icy](./public/assets/images/judgejokesafter.PNG)
 
 
 * To show you how the database has changed, here is the database before rating the jokes. Note the Spicy and Icy values of the top three jokes:
 
-	![MySQL Before Rating Jokes](./public/assets/imgages/mysqlbefore.PNG)
+	![MySQL Before Rating Jokes](./public/assets/images/mysqlbefore.PNG)
 
 * Here is the database after rating the jokes. Note either the Spicy or Icy values of each joke have change:
 
-	![MySQL After Rating Jokes](./public/assets/imgages/mysqlafter.PNG) 
+	![MySQL After Rating Jokes](./public/assets/images/mysqlafter.PNG) 
 
 
 ## Deployment
