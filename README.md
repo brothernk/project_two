@@ -20,7 +20,7 @@ If you choose to `Add Your Own`, a `Make us Laugh` modal will pop up and you can
  * Yellow = Coding Jokes
  * Blue = Puns
 
-![Category colors for burns and bar jokes](../public/assets/images/burnsbar.PNG)
+![Category colors for burns and bar jokes](./public/assets/images/burnsbar.PNG)
 ![Category colors for puns and coding jokes](./public/assets/images/punscoding.PNG)
 
 
