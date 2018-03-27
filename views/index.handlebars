@@ -22,7 +22,7 @@
 <div class="container" id="joke-list">
   {{!-- Open Modal Button --}}
   <div class="row" id="joke-list-header">
-    <a class="links" data-toggle="modal" data-target="#exampleModalCenter" id="add-button">Not funny enough for you? Add your own.</a>
+    <a class="links" data-toggle="modal" data-target="#exampleModalCenter" id="add-button">Add a Joke</a>
   </div>
 
   {{#each Post}}
@@ -46,11 +46,13 @@
           <div class="form-group">
             <label for="body">Joke:</label>
             <textarea class="form-control" rows="3" id="body"></textarea>
+            <br>
             <div class="form-group">
               <label for="category">Select Category:</label>
               <select class="form-control" id="category">
               </select>
             </div>
+            <br>
             <button type="submit" class="btn btn-secondary submit" id="submit-button">Add Joke</button>
           </div>
         </form>

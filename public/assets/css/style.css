@@ -22,7 +22,7 @@ body{
 	height:300px;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin-top:20px;
+	margin-top:30px;
 }
 
 /*Navigation ===============================================*/
@@ -53,10 +53,10 @@ body{
 
 #add-button {
 	color: white;
-	border:2px solid #1e8495;
-	background-color: #1e8495;
 	position: fixed;
-	bottom: 0;
+	background-color:#231f20;
+	border:2px solid #231f20;
+	left:0;
 }
 
 /*Text ===============================================*/
@@ -96,7 +96,7 @@ footer{
 	width: 1000px;
 	margin-bottom:20px;
 	color: white;
-	border-bottom:5px solid #FE5F55;
+	border-bottom:2px solid #FE5F55;
 	box-shadow: -10px 10px 10px darkgrey;
 }
 
@@ -110,11 +110,9 @@ footer{
 }
 
 /* Joke Category ================================*/
-
 .category {
   color: yellow;
 }
-
 
 /* Spicy and Icy Number ================================*/
 .value {
@@ -124,11 +122,17 @@ footer{
 
 /*Modal ===============================================*/
 .modal-content {
-  border-radius: 0px;
   border:none;
   background-color: #FE5F55;
 }
 
 .modal-header {
   border-bottom: none;
+}
+
+#submit-button{
+	background-color: #231f20;
+	border-radius: 0px;
+	border:none;
+	text-transform: uppercase;
 }

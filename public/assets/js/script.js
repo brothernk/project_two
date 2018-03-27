@@ -6,48 +6,14 @@ $(document).ready(function() {
     $("#index-page").hide();
     $("#joke-list").show();
     $("#logo-main").animate({height:"90px"});
+    $("#logo-main").animate({top:"20px"})
   });
 
   //Scroll Events
   window.sr = ScrollReveal({ duration: 2000 });
     sr.reveal('#individual-joke');
-    $(".links").animate({left:"700px"});
-    $("#logo-main").animate({height:"90px"});
+    $(".links").animate({bottom:"0px"});
   });
-
-// Modal Buttons
-  $("#judge-button").click(function(){
-    $("#index-page").hide();
-    $("#joke-list").show();
-    $("#logo-main").animate({height:"100px"});
-    // $('#exampleModalCenter').modal('hide');
-  });
-
-
-  $("#judge-button").click(function(){
-    $("#index-page").hide();
-    $("#joke-list").show();
-    $("#logo-main").animate({height:"100px"});
-    // $('#exampleModalCenter').modal('hide');
-  });
-
-  //Scroll Events
-  // window.sr = ScrollReveal({ duration: 2000 });
-  //   sr.reveal('#individual-joke', 50);
-  // $("#individual-joke").animateScroll(); 
-
-  //Create container for all of the items
-  let itemContainer = $(" ");
-
-  //Holds items
-  let items;
-
-  //Code for getting a specific category will go here
-  let url = window.location.search;
-  let categoryId;
-
-
-  scrollReveal.prototype.isElemInViewport = function () { return true; };
 
   //Update Votes
   $(document).on("click", ".spicy-vote", spicyVote); 
