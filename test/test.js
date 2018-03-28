@@ -67,7 +67,7 @@ describe("SpicyBurnz", function () {
   //check number of joke divs is one more than original amount
   it("it should allow you to submit a joke and verify it is added to index page", function (done) {
     //var joke = document.querySelector("p").textContent;
-    new Nightmare({ show: true })
+    Nightmare({ show: true })
       //will need deployed url
       .goto("https://spicyburnz.herokuapp.com/index")
       //click show jokes button
@@ -82,38 +82,12 @@ describe("SpicyBurnz", function () {
       .evaluate(function () {
         // Assert the that the joke is in joke list
         //return document.querySelector("a[href='/index']");
-        return document.querySelector("p").textContent;
+        //try to use p:last-child
+        return document.querySelector("p:last-child").textContent;
       })
       .then(function (textContent) {
+        console.log(textContent);
         expect(textContent).to.include("What do you call an alligator in a vest? An Investigator!");
-        done();
-      })
-      .catch(function (error) {
-        console.error("Submit failed:", error);
-      });
-  });
-
-  it("it should submit a joke and verify it is added to index page", function (done) {
-    new Nightmare({ show: true })
-      //will need deployed url
-      .goto("https://spicyburnz.herokuapp.com/index")
-      //click show jokes button
-      .click("#add-button")
-      // Enter joke.
-      .type("#body", "Knock knock, whose there? It's me, your boss, open the door so I make you get some work done!")
-      // Enter category.
-      .type("#category", "Work")
-      // Click the login button
-      .click("#submit-button")
-
-
-      // Evaluate the following selector
-      .evaluate(function () {
-        // Assert the that the joke is in joke list
-        return document.querySelector("a[href='/index']");
-      })
-      .then(function (joke) {
-        expect(joke).to.include("Knock knock, whose there? It's me boss, open the door so I can get some work done!");
         done();
       })
       .catch(function (error) {
